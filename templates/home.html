@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="content">
+		<video id="videoPlayer1" preload="auto" autoplay loop controls>
+  			<source src="{% static 'สวัสดี.mp4' %}" type="video/mp4">
+		</video>
+		<h1>Thai to ThaiSL</h1>
+		<p>เว็บไซต์สำหรับแปลภาษาไทยเป็นภาษามือไทยเพื่อการเรียนรู้พัฒนา และทำให้สังคมของคนหูหนวกกับคนปกติเชื่อมกันได้มากขึ้น</p>
+	</div>
+{% endblock %}

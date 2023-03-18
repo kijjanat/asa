@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="image-container">
+    <img src="{% static 'pronoun.jpg' %}" alt="คำสรรพนาม" onclick="window.location.href='{% url 'pronoun' %}'">
+    <img src="{% static 'verb.jpg' %}" alt="คำกริยา" onclick="window.location.href='{% url 'pronoun' %}'">
+    <img src="{% static 'emotional.jpg' %}" alt="ความรู้สึก" onclick="window.location.href='{% url 'pronoun' %}'">
+    <img src="{% static 'most.jpg' %}" alt="คำที่ใช้บ่อย" onclick="window.location.href='{% url 'pronoun' %}'">
+    <img src="{% static 'place.jpg' %}" alt="สถานที่" onclick="window.location.href='{% url 'place' %}'">
+</div>
+{% endblock %}
